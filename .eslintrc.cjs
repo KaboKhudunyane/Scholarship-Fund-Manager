@@ -14,6 +14,17 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['ethers', './path/to/ethers'], // Adjust path to ethers library
+          // Add more aliases as needed
+        ],
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+  },
   env: {
     browser: true,
     commonjs: true,
